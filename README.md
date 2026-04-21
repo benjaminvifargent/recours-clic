@@ -13,7 +13,6 @@
 - **Génération PDF** : Export instantané de la réclamation au format PDF officiel.
 - **Espace Utilisateur** : Dashboard pour suivre l'historique des démarches et télécharger les documents.
 - **Administration complète** : Back-office pour gérer les dossiers reçus et configurer le répertoire des enseignes commerciales (Amazon, Fnac, SNCF, etc.).
-- **Modèle Économique** : Prix unique de 2€ par litige, sans abonnement.
 
 ## 🛠️ Stack Technique
 
@@ -49,6 +48,4 @@ Ouvrez [http://localhost:3000](http://localhost:3000) pour voir l'application.
 - `src/lib/` : Logique métier, templates de lettres (`data.ts`) et utilitaires PDF.
 - `public/` : Assets statiques et images générées.
 
-## ⚖️ Licence
 
-Ce projet est la propriété de RECOURS-CLIC. Tous droits réservés.
