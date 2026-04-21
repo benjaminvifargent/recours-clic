@@ -1,0 +1,267 @@
+.dashboardContainer {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f8fafc;
+}
+
+/* Sidebar Styling */
+.dashboardSidebar {
+  width: 280px;
+  background-color: #ffffff;
+  border-right: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  z-index: 10;
+}
+
+.sidebarLogo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.25rem;
+  margin-bottom: 48px;
+}
+
+.logoIcon {
+  background-color: var(--primary-color);
+  color: white;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-size: 1.1rem;
+}
+
+.sidebarNav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.navItem {
+  padding: 14px 16px;
+  border-radius: 10px;
+  color: #64748b;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navItem:hover {
+  background-color: #f1f5f9;
+  color: var(--primary-color);
+  transform: translateX(4px);
+}
+
+.navItem.active {
+  background-color: #fef2f2;
+  color: var(--primary-color);
+  box-shadow: 0 4px 6px -1px rgba(188, 0, 0, 0.1);
+}
+
+.logoutBtn {
+  margin-top: auto;
+  background: #f1f5f9;
+  border: none;
+  color: #64748b;
+  padding: 14px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.logoutBtn:hover {
+  background-color: #fee2e2;
+  color: var(--primary-color);
+}
+
+/* Main Content Styling */
+.dashboardMain {
+  flex: 1;
+  padding: 48px 64px; /* Marges importantes sur les côtés et le haut */
+}
+
+.dashboardContent {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.dashboardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 48px;
+}
+
+.dashboardHeader h1 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+
+.dashboardHeader p {
+  color: #64748b;
+  font-size: 1.1rem;
+}
+
+/* Stats Grid */
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-bottom: 48px;
+}
+
+.statCard {
+  background: white;
+  padding: 32px;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.statCard:hover {
+  transform: translateY(-4px);
+}
+
+.statLabel {
+  display: block;
+  font-size: 0.95rem;
+  color: #64748b;
+  margin-bottom: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.statValue {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+/* Table Section */
+.tableSection {
+  background: white;
+  border-radius: 20px;
+  border: 1px solid #e2e8f0;
+  padding: 32px;
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.04);
+}
+
+.tableHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.tableHeader h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.viewAll {
+  color: var(--primary-color);
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.dashboardTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dashboardTable th {
+  padding: 16px;
+  border-bottom: 2px solid #f1f5f9;
+  color: #94a3b8;
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+
+.dashboardTable td {
+  padding: 20px 16px;
+  border-bottom: 1px solid #f1f5f9;
+  color: #1e293b;
+  font-size: 1rem;
+}
+
+.statusBadge {
+  padding: 6px 14px;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+}
+
+.tableActions {
+  display: flex;
+  gap: 12px;
+}
+
+.actionBtn {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 1.1rem;
+}
+
+.actionBtn:hover {
+  background: white;
+  border-color: var(--primary-color);
+  transform: scale(1.1);
+}
+
+@media (max-width: 1200px) {
+  .dashboardMain {
+    padding: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboardContainer {
+    flex-direction: column;
+  }
+  .dashboardSidebar {
+    width: 100%;
+    height: auto;
+    position: static;
+    padding: 20px;
+  }
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+  .dashboardHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
